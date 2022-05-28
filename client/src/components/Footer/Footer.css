@@ -1,0 +1,75 @@
+footer > div {
+    padding: 0 25px;
+    display: flex;
+}
+
+#bottom-bar {
+    background-color: #2fa1b3;
+    height: 50px;
+    padding: 5px 25px;
+}
+
+#bottom-bar .align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-bottom {
+    width: 160px;
+    height: 36px;
+    display: inline-block;
+    background: url(https://baomoi-static.zadn.vn/web/styles/img/desktop-logo.png) 0 0/160px 72px;
+    align-items: flex-start;
+    background-size: 160px 72px;
+    margin-right: 20px;
+}
+
+#bottom-bar .search-input {
+    background-color: rgba(255, 255, 255);
+}
+
+#reference .align {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.left-ref {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-ref ul {
+    padding-left: 0px;
+    padding-right: 50px;
+}
+
+.left-ref ul li {
+    display: block;
+}
+
+.left-ref ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+}
+
+#reference h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+    display: block;
+}
+
+.right-ref p {
+    margin-bottom: 5px;
+    color: #757575;
+    text-align: right;
+}
