@@ -13,7 +13,6 @@ for i in first_news.keys():
     data[i] = []
 print(data)
 j = 0
-print(type(pandas.DataFrame.from_dict(b)))
 for post in collection.find():
     for i in post.keys():
         data[i].append(post[i])
@@ -29,3 +28,15 @@ indexer.block("Category")
 candidate_links = indexer.index(data)
 
 print (len(data), len(candidate_links))
+
+compare_cl = recordlinkage.Compare()
+compare_cl.string("Tittle", "Tittle", method="levenshtein", threshold=0.1, label="Tittle")
+
+features = compare_cl.compute(candidate_links, data)
+matches = features[features.sum(axis=1) > 0]
+delete_data = data.iloc[matches.index.unique(1)]['_id']
+delete_data = delete_data.reset_index() 
+for index, row in delete_data.iterrows():
+    print(row[1])
+    query = { "_id" : row[1]}
+    collection.delete_one(query)
