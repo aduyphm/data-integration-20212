@@ -20,9 +20,7 @@ j = 0
 for post in collection.find():
     for i in post.keys():
         data[i].append(post[i])
-    j += 1
-    if j > 5:
-        break
+        
 pprint.pprint(data)
 data = pandas.DataFrame.from_dict(data)
 pprint.pprint(data)
