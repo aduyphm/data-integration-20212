@@ -27,7 +27,7 @@ export default class Navbar extends Component {
           <div className="nav-item text-nowrap">
             <a
               className="nav-link px-3 fw-normal text-primary"
-              href="/admin/logout"
+              href="/"
             >
               Đăng xuất <i className="fa fa-sign-out" aria-hidden="true"></i>
             </a>

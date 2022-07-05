@@ -38,7 +38,7 @@ export default function Search(props) {
         <div className="ml-[140px] mr-[140px] mt-4 mb-4">
             <div>
                 <div className="align">
-                    <TopTitle title={`Kết quả tìm kiếm cho từ khóa "${query}"`} />
+                    <TopTitle title={`Kết quả tìm kiếm cho từ khóa "${query}"`} topic={""}/>
                     <div className="timeline">
                         {articlesList[0] &&  articlesList.map((article, idx) => <SubNews data={article} />)}
                     </div>

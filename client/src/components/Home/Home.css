@@ -1,0 +1,6 @@
+.content > div {
+    padding: 15px 25px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    position: relative;
+}

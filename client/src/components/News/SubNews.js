@@ -21,9 +21,9 @@ export default function SubNews({ data }) {
                     <span className='text-sm sm:text-lg font-medium group-hover:text-blue-400'>
                         <a href={link} target="_blank" rel="noreferrer" style={{textAlign: 'justify'}} >{title}</a>
                     </span>
-                    <div>
+                    {/* <div>
                         <p style={{textAlign: 'justify', fontSize: 12}}>{sapo}</p>
-                    </div>
+                    </div> */}
                     <div className='flex gap-3 mt-2 items-end overflow-hidden'>
                         <a href={`http://${source}`}>
                             <img src={imgSource[source]} alt="" className='max-h-4 object-cover' />

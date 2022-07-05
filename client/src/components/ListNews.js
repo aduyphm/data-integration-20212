@@ -6,11 +6,10 @@ import { useState, useEffect } from "react";
 export default function ListNews({topic}) {
 
     const [articlesList, setArticlesList] = useState([])
-    console.log(topic)
     useEffect(() => {
         try {
             const getArticlesList = async (name) => {
-                const response = await fetch(`${API_URL}/api/articles/getArticlesByCategory/${name}`, {
+                const response = await fetch(API_URL.concat('/api/articles/getArticlesByCategory/', name), {
                     method: 'GET',
                     headers: {
                         Accept: 'application/json',
@@ -25,7 +24,7 @@ export default function ListNews({topic}) {
         } catch (e) {
             console.log(e)
         }
-    }, []);
+    }, [topic]);
 
     return (
         <div className=" ml-[140px] mr-[140px] mt-5">
@@ -52,7 +51,7 @@ export default function ListNews({topic}) {
                 </div>
                 <div>
                     {
-                        articlesList.slice(50, 103).map((article) => (
+                        articlesList.slice(50, 100).map((article) => (
                             article &&
                                 <SubNews data={article} />
                         ))
