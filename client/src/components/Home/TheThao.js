@@ -29,7 +29,7 @@ export default function TheThao({ articles, reload }) {
 
     return (
                 <div>
-                    <TopTitle title={'Thể thao'} />
+                    <TopTitle title={'Thể thao'} topic={'/chu-de/the-thao'} />
                     < div className="sm:gap-5 mb-3">
                         {
                             TheThaoList.slice(0, 1).map((article, idx) => (

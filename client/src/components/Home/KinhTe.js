@@ -29,7 +29,7 @@ export default function KinhTe({ articles, reload }) {
 
     return (
                 <div>
-                    <TopTitle title={'Kinh tế'} />
+                    <TopTitle title={'Kinh tế'} topic={'/chu-de/kinh-te'} />
                     < div className="sm:gap-5 mb-3">
                         {
                             KinhTeList.slice(0, 1).map((article, idx) => (

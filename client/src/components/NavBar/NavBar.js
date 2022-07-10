@@ -73,13 +73,13 @@ export default function NavBar() {
                                     </Link>
                                 </div>
                             </li>
-                            <li>
+                            {/* <li>
                                 <div className={sucKhoeClass}>
                                     <Link to={"/chu-de/suc-khoe"}>
                                         <span>Sức khỏe</span>
                                     </Link>
                                 </div>
-                            </li>
+                            </li> */}
                             <li>
                                 <div className={doiSongClass}>
                                     <Link to={"/chu-de/doi-song"}>
@@ -94,13 +94,13 @@ export default function NavBar() {
                                     </Link>
                                 </div>
                             </li>
-                            <li>
+                            {/* <li>
                                 <div className={duLichClass}>
                                     <Link to={"/chu-de/du-lich"}>
                                         <span>Du lịch</span>
                                     </Link>
                                 </div>
-                            </li>
+                            </li> */}
                             <li>
                                 <div className={khoaHocClass}>
                                     <Link to={"/chu-de/khoa-hoc"}>

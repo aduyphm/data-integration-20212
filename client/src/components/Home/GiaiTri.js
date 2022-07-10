@@ -29,7 +29,7 @@ export default function GiaiTri({ articles, reload }) {
 
     return (
                 <div>
-                    <TopTitle title={'Giải trí'} />
+                    <TopTitle title={'Giải trí'} topic={'/chu-de/giai-tri'} />
                     < div className="sm:gap-5 mb-3">
                         {
                             GiaiTriList.slice(0, 1).map((article, idx) => (

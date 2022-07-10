@@ -37,8 +37,8 @@ export default function Header() {
               onClick={onSubmit}
             />
           </form>
-          <a href="#" className="link gray-border">Join</a>
-          <a href="#" className="link join-log-btn">Log in</a>
+          {/* <a href="#" className="link gray-border">Join</a> */}
+          <a href="/admin/login" className="link gray-border">Log in</a>
         </div>
       </div>
     </header>

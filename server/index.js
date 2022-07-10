@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const {PORT, HOST, MONGO_URI} = require("./constants/constants");
 const mainRouter = require('./routes');
+const adminRoute = require('./routes/adminRoute');
 
 const app = express();
 
@@ -26,6 +27,9 @@ mongoose.connect(MONGO_URI, {
     })
 
 app.use(mainRouter);
+app.use(adminRoute,function(req,res,next){
+    next()
+});
 app.use('/uploads', express.static('uploads'));
 
 const server = app.listen(PORT, () =>

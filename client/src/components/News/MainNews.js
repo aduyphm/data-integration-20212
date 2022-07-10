@@ -6,6 +6,8 @@ const imgSource = {
     'thanhnien.vn': 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Thanh_Ni%C3%AAn_logo.svg/1280px-Thanh_Ni%C3%AAn_logo.svg.png',
     'nguoilambao.vn': 'https://nguoilambao.vn/images/logos/logo.png',
     'kienthuc.net.vn': 'https://bagiang.com/wp-content/uploads/2018/04/kienthuc.net-thuoc-dai-trang-hoan-ba-giang-min.png',
+    'vtc.vn': 'https://vtc.vn/Content/pc/theme/images/logo.png?v=1189',
+    'zingnews.vn': 'https://static-znews.zingcdn.me/images/logo-zing-home.svg'
 }
 
 export default function MainNews({ data }) {

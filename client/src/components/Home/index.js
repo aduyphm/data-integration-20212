@@ -11,7 +11,6 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
     const [ThoiSuList, setThoiSuList] = useState([])
-    const [KinhTeList, setKinhTeList] = useState([])
     useEffect(() => {
         try {
             const getThoiSuList = async () => {
@@ -33,7 +32,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className=" ml-[140px] mr-[140px] mt-5">
+        <div className=" ml-[140px] mr-[140px] mt-2">
             <div className="grid grid-cols-2 gap-5 ">
                 <div>
                     <div> <Article /></div>

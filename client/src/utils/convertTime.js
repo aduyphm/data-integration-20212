@@ -1,9 +1,7 @@
 exports.convertTime = (release_time) => {
     let time = new Date(release_time)
     time.setHours(time.getHours() - 7); 
-    console.log(time)
     let timestamp = new Date() - time;
-    console.log(timestamp)
     let hour = (timestamp - timestamp % 3600000) / 3600000; // 60 * 60 * 1000
     let minute = Math.round((timestamp - hour * 60 * 60 * 1000) / (1000 * 60));
     if (hour === 0) {

@@ -29,7 +29,7 @@ export default function ThoiSu({ articles, reload }) {
 
     return (
                 <div>
-                    <TopTitle title={'Thời sự'} />
+                    <TopTitle title={'Thời sự'} topic={"/chu-de/thoi-su"}/>
                     < div className="sm:gap-5 mb-3">
                         {
                             ThoiSuList.slice(0, 1).map((article, idx) => (
